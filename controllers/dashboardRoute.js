@@ -21,7 +21,7 @@ router.get('/', withAuth, async (req, res) => {
 });
 
 
-//fill in here
+
 router.get("/edit/:id", withAuth, async (req, res) =>{
     try {
         const postData = await Post.findOne(
